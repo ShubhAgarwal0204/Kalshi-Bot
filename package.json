@@ -1,0 +1,41 @@
+{
+  "name": "kalshibot",
+  "version": "1.0.0",
+  "description": "Production-grade trading bot for Kalshi KXBTCD hourly Bitcoin markets",
+  "main": "dist/main.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/main.js",
+    "dev": "tsx src/main.ts",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "db:migrate": "tsx scripts/migrate.ts",
+    "db:push": "tsx scripts/migrate.ts"
+  },
+  "keywords": [
+    "trading",
+    "kalshi",
+    "bitcoin",
+    "bot"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.0",
+    "dotenv": "^16.3.1",
+    "openai": "^4.20.0",
+    "ws": "^8.16.0",
+    "zod": "^3.22.4",
+    "date-fns-tz": "^2.0.0",
+    "date-fns": "^2.30.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/ws": "^8.5.10",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3",
+    "vitest": "^1.0.4"
+  }
+}
+
